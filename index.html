@@ -1,0 +1,67 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form>
+      <h1 id="title">Sign up</h1>
+      <div class="inputItem">
+        <label for="nameInput">Name:</label>
+        <input type="text" id="nameInput" />
+      </div>
+      <div class="inputItem" id="passwordOld">
+        <label for="passwordOldInput">Old Password:</label>
+        <input type="password" id="passwordOldInput" />
+      </div>
+      <div class="inputItem">
+        <label for="passwordInput">Password:</label>
+        <input type="password" id="passwordInput" />
+      </div>
+      <div class="inputItem">
+        <label for="phoneInput">Phone:</label>
+        <input type="text" id="phoneInput" />
+      </div>
+      <div class="inputItem">
+        <label for="dateInput">Date of birth:</label>
+        <input type="text" id="dateInput" />
+      </div>
+      <div class="inputItem">
+        <label for="photoInput">Photo:</label>
+        <input
+          type="file"
+          id="photoInput"
+          onchange="encodeImageFileAsURL(this)"
+        />
+      </div>
+      <div class="userImage"></div>
+      <input id="loginButton" type="button" value="Sign up" onclick="User.createUser()" />
+      <input id="changeDataButton" type="button" value="Change Data" onclick="handleSaveNewUserData()" />
+    </form>
+    <div id="mainContent">
+      <h1 id="title">You are logged now</h1>
+      <div class="userImage"></div>
+      <div class="inputItem">
+        <span>Name:</label>
+        <span id='nameOutput'></label>
+        
+      </div>
+      <div class="inputItem">
+        <span>Phone:</label>
+          <span id='phoneOutput'></label>
+      </div>
+      <div class="inputItem">
+        <span>Date of birth:</label>
+          <span id='dateOutput'></label>
+      </div>
+      <div class="inputItem">
+      <input type="button" value="Sign out" onclick="handleSignOut()" />
+      <input type="button" value="Change Data" onclick="handleRenderChangeUserDataForm()" />
+    </div> 
+    </div>
+
+    <script src="js.js"></script>
+  </body>
+</html>

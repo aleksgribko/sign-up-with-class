@@ -1,0 +1,50 @@
+body {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userImage {
+  display: none;
+  width: 100px;
+  height: 100px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 50px;
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  align-items: center;
+  background-color: whitesmoke;
+  padding: 20px;
+}
+
+.inputItem {
+  width: 100%;
+  padding-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+
+#mainContent {
+  display: none;
+  flex-direction: column;
+  width: 300px;
+  align-items: center;
+  background-color: whitesmoke;
+  padding: 20px;
+}
+
+#passwordOld {
+  display: none;
+}
+
+#changeDataButton {
+  display: none;
+}
